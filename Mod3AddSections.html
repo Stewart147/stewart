@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Enhanced Website</title>
+        <style>
+            /*  We'll add CSS here later  */
+
+            /* Basic Reset */
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial,sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+            }
+
+            /* Navigation Styling */
+
+            .nav-container{
+                background-color: #333;
+                padding: 1rem 0;
+                position: sticky;
+                top: 0;
+            }
+
+            .main-nav ul{
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+            }
+
+            .main-nav a{
+                color: white;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                transition: color 0.3s ease;
+            }
+
+            .main-nav a:hover{
+                color:#ffd700;
+            }
+
+            /*   Header Styling   */
+
+            .header{
+                text-align: center;
+                padding: 3rem 1rem;
+                background-color: #fff;
+                margin-bottom: 2rem;
+            }
+
+            .header h1{
+                color: #333;
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .subtitle{
+                color: #666;
+                font-size: 1.2rem;
+            }
+
+            /*  Main Content Styling  */
+
+            .main-content{
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0 1rem;
+            }
+
+            .about-section, .services-section, .contact-section{
+                background-color: white;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+            }
+
+            h2{
+                color: #333;
+                margin-bottom: 1rem;
+                font-size: 1.8rem;
+            }
+
+            .highlight{
+                background-color: #ffd700;
+                padding: 0.2rem 0.5rem;
+                border-radius: 4px;
+            }
+
+            em{
+                color: #666;
+                font-style: italic;
+            }
+
+            .email{
+                color: #0066cc;
+                font-weight: bold;
+            }
+
+            .textColour-section{
+                background-color: #0066cc;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+            }
+
+            .textDecoration-section{
+                background-color: #ffd700;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+            }
+
+            .textLeft-section{
+                text-align: left;
+                background-color: aqua;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+            }
+
+            .textCentre-section{
+                text-align: center;
+                background-color: #666;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+            }
+
+            .textRight-section{
+                text-align: right;
+                background-color: #e9a526;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+            }
+
+            .textAlign-span{
+                background-color: #dd7ca9;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+            }
+
+            .textAlign-div{
+                background-color: #dd7ca9;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+            }
+
+            .textAlign-p{
+                background-color: #dd7ca9;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+            }
+
+
+
+            /*  Footer Styling  */
+
+            .footer{
+                text-align: center;
+                padding: 2rem;
+                background-color: #333;
+                color: white;
+                margin-top: 2rem;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <!--  Navigation Section -->
+
+        <div class="nav-container">
+            <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+
+        <!--  Header Section  -->
+
+        <div class="header">
+            <h1>Welcome to My Website</h1>
+            <p class="subtitle">Learning <em>HTML</em> and <em>CSS</em></p>
+        </div>
+
+        <!--  Main Content Section  -->
+
+        <div class="main-content">
+            <div class="about-section" id="about">
+                <h2>About Us</h2>
+                <p>Welcome to our Website! Here you'll find <span style="font-size: 1.2em;">
+                    amazing content</span> about web development.
+                </p>
+            </div>
+
+            <div class="services-section" id="services">
+            <h2>Our Services</h2>
+            <p>We specialize in:</p>
+            <ul>
+                <li><span class="highlight">Website Design</span></li>
+                <li><em>Content Creation</em></li>
+                <li><strong>Digital Marketing</strong></li>
+            </ul>
+            </div>
+
+            <div class="contact-section" id="contact">
+                <h2>Contact Us</h2>
+                <p>Get in touch:<span class="email">email@example.com</span></p>
+            </div>
+
+            <div class="textColour-section" id="textColour">
+            <h2>New Text</h2>
+            <p>This is <span style="color:#ff6b6b">coloured text</span> and
+            <span style="font-weight:bold">bold text</span>.
+           </p>
+            </div>
+
+            <div class="textDecoration-section" id="textDecoration">
+            <h2>Text Decoration</h2>
+            <p>This is <span style="text-decoration:underline">underlined text</span> and
+            <span style="text-decoration:line-through">strike through text</span>.
+            </p>
+            </div>
+
+            <div class="textLeft-section" id="textLeft">
+            <h2>Text Left</h2>
+            <p>This is <span style="text-align: left;">text aligned left text aligned left text aligned left text aligned left</span>
+            </p>
+            </div>
+
+            <div class="textCentre-section" id="textCentre">
+            <h2>Text Centre</h2>
+            <p>This is <span style="text-align: center;">text aligned centre text aligned centre text aligned centre text aligned centre</span>
+            </p>
+            </div>
+
+            <div class="textRight-section" id="textRight">
+            <h2>Text Right</h2>
+            <p>This is <span style="text-align: right;">text aligned right text aligned right text aligned right text aligned right</span>
+            </p>
+            </div>
+
+            <!--  check why this doesn't work  <span> is an inline element unlike block elements
+                <div> <h1> <p> etc, the span only takes up as much horizontal space as its content -->  
+           
+            <div class="textAlign-span" id="textAlign-span">
+            <h2>Text Alignment Using Span Style</h2>
+            
+            <span style="text-align:center">This is centered text centered text centered text centered text</span>
+            <span style="text-align:left"> This is left aligned text left aligned text left aligned text left aligned text</span>
+            <span style="text-align:right">This is right aligned text right aligned text right aligned text right aligned text</span>
+            <p>Span element by default is an <ins>inline element</ins>, unlike block elements <span class="highlight">div h1 p</span>
+                the span only takes up as <strong> much horizontal space as its content.</strong>
+            </p>
+            </div>
+
+            <div class="textAlign-div" id="textAlign-div">
+            <h2>Text Alignment Using Div Style</h2>
+
+            <div style="text-align:center">This is centered text centered text centered text centered text</div>
+            <div style="text-align:left"> This is left aligned text left aligned text left aligned text left aligned text</div>
+            <div style="text-align:right">This is right aligned text right aligned text right aligned text right aligned text</div>
+            
+           </div>
+
+           <div class="textAlign-p" id="textAlign-p">
+            <h2>Text Alignment Using p Style</h2>
+            <p style="text-align:center">This is centered text centered text centered text centered text</p>
+            <p style="text-align:left"> This is left aligned text left aligned text left aligned text left aligned text</p>
+            <p style="text-align:right">This is right aligned text right aligned text right aligned text right aligned text</p>
+           
+           </div> 
+        
+   </div>
+
+   <!--  Footer Section  -->
+
+    <div class="footer">
+        <p>&copy; 2024 My Website</p>
+    </div>
+
+    </body>
+    </html>
