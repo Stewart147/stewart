@@ -1,0 +1,171 @@
+ 
+             *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+            }
+
+
+            body{
+                font-family:Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                margin: 20px;
+            }
+
+            /* Navigation Styling */
+
+            nav{
+                position: sticky;
+                background-color: #333;
+                padding: 1rem 0;
+                position: sticky;
+                top: 0;
+            }
+
+            nav ul{
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+            }
+
+            nav a{
+                color: white;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                transition: color 0.3s ease;
+            }
+
+            nav a:hover{
+                color: #ffd700;
+            }
+
+            /* Header Styling */
+
+            
+
+            header{
+                text-align: center;
+                padding: 3rem 1rem;
+                background-color: #fff;
+                margin-bottom: 2rem;
+            }
+
+            
+
+            header h1{
+                color: #333;
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            /* Main Content Styling  */
+
+           /* main{
+                background-color: blue;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0.1rem;
+                z-index: 5;
+            }
+                */
+
+                main{
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                    background-color: white;
+                    max-width: 800px;
+                    margin: 20px auto;
+                    padding: 0.1rem;
+                }
+                    
+                
+
+            article, aside{
+                position: relative; 
+               /* background-color: white; */
+                padding: 2rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            address{
+                background-color:khaki;
+                padding: 20px;
+                width: 200px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                height: 60px;
+                position: absolute;
+                top: 0;
+                left: 200px;
+            }
+
+             /* Text Formatting */
+
+            .email{
+                color: #0066cc;
+                text-align: center;
+                font-style: italic;
+                font-size: 15px;
+            }
+
+
+            
+            h2{
+                color: #333;
+            }
+            
+
+            /* Footer Styling */
+
+            footer{
+                background-color: #333;
+                color:white;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .footer p{
+                text-align: center;
+            }
+
+           
+            .footer-links{
+               list-style: none;
+               background-color:#333;
+               text-align: center;
+            }
+
+            .footer-links a{
+               color: white;
+               text-decoration: none;
+               transform: color 0.3s;
+            }
+
+            .footer-links a:hover{
+               color: #2b6289;
+               text-decoration: none;
+               transform: color 0.3s;
+            }
+
+
+
+
+           
+        
+
+            
+            
+
+
+
+
+
+
+        
