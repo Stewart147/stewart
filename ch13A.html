@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge 13 layout</title>
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/8a10e0f309.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        /* grid layout */
+
+        .container-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows:  100px 100px 100px 200px 300px 260px 460px 460px 100px 120px;
+        }
+
+        .sectionA1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            color: #fff;
+        }
+
+        .sectionA2 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            color: #fff;
+        }
+
+        .sectionA3 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            color: #fff;
+        }
+
+        .sectionB {
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+        }
+
+        .sectionC {
+            grid-column: 1 / 2;
+            grid-row: 4 / 11;
+        }
+
+        .sectionD {
+            grid-column: 2 / 4;
+            grid-row: 2 / 3;
+        }
+
+        .sectionE {
+            grid-column: 2 / 3;
+            grid-row: 3 / 5;
+        }
+
+        .sectionF {
+            grid-column: 3 / 4;
+            grid-row: 3 / 6;
+        }
+
+        .sectionG {
+            grid-column: 2 / 3;
+            grid-row: 5 / 7;
+        }
+
+        .sectionH {
+            grid-column: 2 / 3;
+            grid-row: 7 / 8;
+        }
+
+        .sectionI {
+            grid-column: 3 / 4;
+            grid-row: 6 / 9;
+        }
+
+        .sectionJ {
+            grid-column: 2 / 3;
+            grid-row: 8 / 10;
+        }
+
+        .sectionK {
+            grid-column: 3 / 4;
+            grid-row: 9 / 11;
+        }
+
+         .sectionL {
+            grid-column: 2 / 3;
+            grid-row: 10 / 11;
+        }
+
+        /* header section styles */
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px ;
+            padding: 10px;
+         } 
+
+         .sectionA1, .sectionA2, .sectionA3 {
+            display: flex;
+            align-items: center;
+            background-color: lightslategray;
+            font-family: 'Montserrat', sans-serif;
+         } 
+
+         .sectionA1 {
+          justify-content: space-around;
+         }
+
+         .sectionA2 {
+          justify-content: center;
+         }
+
+         .sectionA2 i {
+          padding: 0px 10px;
+         }
+
+         .sectionA2 .search-input {
+          margin-right: 200px;
+          padding: 10px 30px;
+          width: 260px;
+          border-radius: 20px;
+          text-align: end;
+         }
+
+         .sectionA3 {
+          justify-content: end;
+          padding-right: 20px;
+         }
+
+         .sectionA3 .imgA3 {
+          padding-right: 10px;
+           width: 30px;
+           height: 30px; 
+           border-radius: 30px;
+           object-fit: cover;
+         }
+
+         /* sectionB styles */
+
+        .sectionB {
+            display: flex;
+          flex-direction: column;
+           justify-content: center;
+           align-items: center; 
+           font-family: 'Montserrat', sans-serif;
+           background-color: #fdfafa;
+           
+         } 
+
+         .home {
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+        
+         }
+
+          .home h6 {
+            padding-left: 20px;
+            padding-right: 50px;
+         }
+
+         .apps {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+         } 
+
+         .apps h6 {
+            padding-left: 20px;
+         }
+
+    /* sectionC styles */
+
+    .sectionC {
+        padding-left: 20px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #fdfafa;   
+    }
+
+    .dataC {
+      padding-left: 80px;
+      padding-bottom: 60px;
+    }
+
+    .data-tools {
+      padding: 30px 0px;
+    }
+
+    .data-tools label {
+      padding-right: 60px;
+    }
+
+    .analysis-tools {
+      padding: 30px 0px;
+    }
+
+     .analysis-tools label {
+      padding-right: 34px;
+    }
+
+    .data-reports {
+      padding: 30px 0px;
+    }
+
+    .data-reports label {
+      padding-right: 48px;
+    }
+
+    .emailer-tools {
+      padding: 30px 0px;
+    }
+
+    .emailer-tools label {
+      padding-right: 40px;
+    }
+
+    .import-designs {
+      padding: 30px 0px;
+    }
+
+    .import-designs label {
+      padding-right: 38px;
+    }
+
+    .previous-reports {
+      padding: 30px 0px;
+    }
+
+    .previous-reports label {
+      padding-right: 22px;
+    }
+
+    .web-capabilities {
+      padding: 30px 0px;
+    }
+
+    .web-capabilities label {
+      padding-right: 26px;
+    }
+
+
+
+/*    .addonsC {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    } */
+
+   .addonsC1 {
+       display: flex;
+       flex-direction: row;
+       justify-content:start;
+       align-items:center;
+       padding: 30px 0px;
+   }
+
+   .addonsC1 label {
+      padding-left: 20px;
+      padding-right: 46px;
+   }
+
+   .addonsC2 {
+       display: flex;
+       flex-direction: row;
+       justify-content: start;
+       align-items: center;
+       padding: 30px 0px;
+   }
+
+    .addonsC2 label {
+        padding-left: 20px;
+        padding-right: 32px;
+   }
+
+   .addonsC3 {
+       display: flex;
+       flex-direction: row;
+       justify-content: start;
+       align-items: center;
+       padding: 30px 0px;
+   }
+
+    .addonsC3 label {
+        padding-left: 20px;
+        padding-right: 52px;
+   }
+
+   .addonsC4 {
+       display: flex;
+       flex-direction: row;
+       justify-content: start;
+       align-items: center;
+       padding: 30px 0px;
+   }
+
+   .addonsC4 label {
+        padding-left: 20px;
+        padding-right: 26px;
+   }
+
+/*  .addonsC h5 {
+    padding-left: 20px;
+   } */
+
+  .sectionC .buttonC {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:flex-end;
+   }
+
+   /* sectionD styles */
+
+   .sectionD {
+    display: flex;
+  /*  justify-content: start;
+    align-items: center; */
+   padding: 20px 20px;
+   font-family: 'Montserrat', sans-serif;
+   }
+
+   .sectionD i {
+    padding-top: 30px;
+   } 
+
+   .contentD {
+  /*  padding-bottom: 30px; */
+      line-height: 0.1;
+   }
+
+   /* sectionE styles */
+
+     .sectionE {
+     background-image: url(images/code8A.png);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border: 5px dotted transparent;
+            z-index: -1;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 20px;
+            align-items: center;
+            color: #fff;
+     }
+
+     .sectionE i {
+        z-index: 100;
+     /*   display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #fff; */
+     }
+
+     /* sectionF styles */
+
+     .sectionF {
+        padding: 0px 10px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #fdfafa;
+     }
+
+     .chats1 {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+     /*  max-height: 50px; */
+     padding: 0;
+     margin: 0;
+   
+     }
+
+       .chats-content1 {
+       display:flex;
+       flex-direction: column;
+       align-items: start;
+      justify-content: center; 
+   /*    padding-bottom: 20px; */
+    /*   line-height: 0.6; */ 
+         padding: 0;
+     /*  padding-right: 100px; */
+       margin: 0;
+     }
+
+    
+
+     .chats-content2 {
+       display:flex;
+       flex-direction: column;
+       align-items: start;
+      justify-content: center; 
+   /*    padding-bottom: 20px; */
+    /*   line-height: 0.2; */
+        padding: 0;
+        margin: 0;
+     }
+
+    .heading {
+        font-size: 24px;
+        padding-top: 0px;
+        padding-left: 10px;
+     } 
+
+     .name {
+        font-size: 12px;
+      /*  padding-top: 26px; */
+     }
+
+    
+    .imgF { 
+            width: 30px;
+            height: 30px; 
+            border-radius: 30px;
+            object-fit: cover;
+            border: 1px solid #000; /* ask for help */
+            box-shadow: rgba(0, 0, 0, 0.7);
+            z-index: 101;
+            padding: 0;
+            margin: 0;
+         } 
+
+    .buttonF {
+        padding: 2px 6px;
+        background-color: lightgray;
+        border: 1px solid darkgrey;
+        border-radius: 20px;
+    }
+
+    .buttonF:hover {
+        background-color: rgb(231, 219, 219);
+    }
+
+    /* sectionG styles */
+
+    .sectionG {
+        display: flex;
+        padding: 30px 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .imgG { 
+       width: 140px;
+       height: 140px; 
+       object-fit: cover;
+        border: 1px solid #000; /* ask for help */
+        box-shadow: rgba(0, 0, 0, 0.7);
+        z-index: 101;
+    } 
+
+    .contentG {
+        padding: 20px 20px;
+    }
+
+    
+    /* sectionH styles */
+
+     .sectionH {
+        display: flex;
+        padding: 30px 10px;    
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .imgH { 
+       width: 140px;
+       height: 140px; 
+       object-fit: cover;
+        border: 1px solid #000; /* ask for help */
+        box-shadow: rgba(0, 0, 0, 0.7);
+        z-index: 101;
+    } 
+
+    .contentH {
+        padding: 20px 20px;
+    }
+
+    /* sectionI styles */
+
+    .sectionI {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fdfafa;
+    }
+
+    .todo-list {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    .todo-update {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 180px 60px;
+    }
+
+    /* sectionJ styles */
+
+
+  .sectionJ {
+        display: flex;
+        padding: 30px 10px;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .imgJ { 
+       width: 140px;
+       height: 140px; 
+       object-fit: cover;
+       border: 1px solid #000; /* ask for help */
+       box-shadow: rgba(0, 0, 0, 0.7);
+       z-index: 101;
+    } 
+
+    .contentJ {
+        padding: 20px 20px;
+    }
+
+    /* sectionK styles */
+
+    .sectionK {
+        padding-left: 20px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #fdfafa;
+    }
+
+    .contentK {
+        display: flex;
+        padding: 30px 30px; 
+    
+    }
+
+    .contentK p {
+        padding: 0px 30px;
+    }
+
+    hr {
+      width: 70%;
+      text-align: center;
+    }
+
+           /* Responsive Design */
+
+        @media (max-width: 768px) {
+            .container-grid {
+                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem; 
+            }
+
+            .sectionA2 .search-input {
+              margin-right: 10px;
+            }
+
+            .sectionA3 {
+              justify-content: center;
+              align-items: center;
+            }
+
+            .sectionD {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .sectionE {
+              height: 160px;
+            }
+
+            .sectionG, .sectionH, .sectionJ {
+              display: flex;
+              flex-wrap: wrap;
+          
+            }
+
+        }
+
+
+  
+  
+
+  
+
+
+
+
+
+
+    
+
+
+       
+      
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="container-grid">
+
+    <!-- header section -->
+
+    <div class="sectionA1">
+        <div class="logo">LOGO</div>
+        <h3>COMPANY NAME</h3>
+    </div>
+
+    <div class="sectionA2">
+         <input class="search-input" type="search"  placeholder="fa-solid fa-magnifying-glass fa-lg"> <!--ask for help -->
+      <!--  <i class="fa-solid fa-magnifying-glass fa-lg"></i> -->
+
+         <i class="fa-solid fa-user fa-lg"></i>
+         <i class="fa-solid fa-envelope fa-lg"></i>
+         <i class="fa-solid fa-cart-shopping fa-lg"></i>
+    </div>
+
+    <div class="sectionA3">
+         <figure>
+          <img class="imgA3" src="images/cat1.png" /> 
+         </figure>
+         <h5>PROFILE NAME</h5>
+    </div>
+
+    <!-- end of header section -->
+
+    <!-- sectionB -->
+
+    <div class="sectionB">
+        <div class="home">
+         <i class="fa-solid fa-house fa-lg"></i>
+         <h6>HOME</h6>
+         </div>
+         <div class="apps">
+          <i class="fa-brands fa-app-store fa-lg"></i>
+         <h6>APPLICATIONS</h6>
+         </div>
+    </div>
+
+    <!-- sectionC -->
+
+    <div class="sectionC">
+
+     
+     <!--  <h5>DATA TOOLS</h5> -->
+
+             <div class="dataC">
+
+            <div class="data-tools">
+             <label for="subject" style="font-size:12px;">DATA TOOLS</label>
+        <select id="data" name="data" style="width:30px;" required>
+            <option value="tool"></option>
+            <option value="tool1">TOOL1</option>
+            <option value="tool2">TOOL2</option>
+            <option value="tool3">TOOL3</option>
+        </select>
+        </div>
+        
+    <!--   <h5>ANALYSIS TOOLS</h5>  -->
+
+              <div class="analysis-tools">
+               <label for="subject" style="font-size:12px;">ANALYSIS TOOLS</label>
+        <select id="data" name="data" style="width:30px;" required>
+            <option value="analysis"></option>
+            <option value="analysis1">ANALYSIS1</option>
+            <option value="analysis2">ANALYSIS2</option>
+            <option value="analysis3">ANALYSIS3</option>
+        </select>
+        </div>
+
+    <!--   <h5>DATA REPORTS </h5> -->
+
+         <div class="data-reports">
+          <label for="subject" style="font-size:12px;">DATA REPORTS</label>
+        <select id="data" name="data" style="width:30px;" required>
+            <option value="reports"></option>
+            <option value="reports1">DATA REPORT1</option>
+            <option value="reports2">DATA REPORT2</option>
+            <option value="reports3">DATA REPORT3</option>
+        </select>
+        </div>
+
+        <!-- EMAILER TOOLS -->
+
+           <div class="emailer-tools">
+           <label for="subject" style="font-size:12px;">EMAILER TOOLS</label>
+        <select id="data" name="data" style="width:30px;" required>
+            <option value="email"></option>
+            <option value="email1">EMAILER1</option>
+            <option value="email2">EMAILER2</option>
+            <option value="email3">EMAILER3</option>
+        </select>
+        </div>
+            
+
+    <!--   <h5>IMPORT DESIGNS</h5> -->
+
+         <div class="import-designs">
+         <label for="subject" style="font-size:12px;">IMPORT DESIGNS</label>
+        <select id="data" name="designs" style="width:30px;" required>
+            <option value="designs"></option>
+            <option value="designs1">IMPORT DESIGNS1</option>
+            <option value="designs2">IMPORT DESIGNS2</option>
+            <option value="designs3">IMPORT DESIGNS3</option>
+        </select>
+        </div>
+            
+
+     <!--   <h5>PREVIOUS REPORTS</h5> -->
+
+               <div class="previous-reports">
+               <label for="subject" style="font-size:12px;">PREVIOUS REPORTS</label>
+        <select id="data" name="previous reports" style="width:30px;" required>
+            <option value="previous reports"></option>
+            <option value="previous reports1">PREVIOUS REPORTS1</option>
+            <option value="previous reports2">PREVIOUS REPORTS2</option>
+            <option value="previous reports3">PREVIOUS REPORTS3</option>
+        </select>
+        </div>
+            
+
+    <!--    <h5>WEB CAPABILITIES</h5>  -->
+
+               <div class="web-capabilities">
+                  <label for="subject" style="font-size:12px;">WEB CAPABILITIES</label>
+        <select id="data" name="web capabilities" style="width:30px;" required>
+            <option value="web capabilities"></option>
+            <option value="web capabilities1">WEB CAPABILITIES1</option>
+            <option value="web capabilities2">WEB CAPABILITIES2</option>
+            <option value="web capabilities3">WEB CAPABILITIES3</option>
+        </select>
+        </div>
+
+
+     </div>  <!-- end of dataC section -->
+
+     <!-- addons section -->
+
+     <div class="addonsC">
+
+        <div class="addonsC1">
+          <i class="fa-solid fa-circle-dot fa-lg"></i>
+        <!--  <h5>ARCHIEVES</h5> -->
+           <label for="subject" style="font-size:12px;">ARCHIVES</label>
+        <select id="archives" name="archives" style="width:30px;" required>
+            <option value="archives"></option>
+            <option value="archives1">ARCHIVES1</option>
+            <option value="archives2">ARCHIVES2</option>
+            <option value="archives3">ARCHIVES3</option>
+        </select>
+         </div>
+
+        <div class="addonsC2">  
+          <i class="fa-solid fa-circle-dot fa-lg"></i>
+       <!--  <h5>DASHBOARD</h5> -->
+             <label for="subject" style="font-size:12px;">DASHBOARD</label>
+        <select id="dashboard" name="dashboard" style="width:30px;" required>
+            <option value="dashboard"></option>
+            <option value="dashboard1">DASHBOARD1</option>
+            <option value="dashboard2">DASHBOARD2</option>
+            <option value="dashboard3">DASHBOARD3</option>
+        </select>
+          </div>
+
+        <div class="addonsC3"> 
+          <i class="fa-solid fa-circle-dot fa-lg"></i>
+      <!--   <h5>PLUG-INS</h5> -->
+            <label for="subject" style="font-size:12px;">PLUG-INS</label>
+        <select id="plug-ins" name="plug-ins" style="width:30px;" required>
+            <option value="plug-ins"></option>
+            <option value="plug-ins1">PLUG-INS1</option>
+            <option value="plug-ins2">PLUG-INS2</option>
+            <option value="plug-ins3">PLUG-INS3</option>
+        </select> 
+        </div>
+
+        <div class="addonsC4"> 
+          <i class="fa-solid fa-circle-dot fa-lg"></i>
+      <!--   <h5>PREFERENCES</h5> -->
+           <label for="subject" style="font-size:12px;">PREFERENCES</label>
+        <select id="preferences" name="preferences" style="width:30px;" required>
+            <option value="preferences"></option>
+            <option value="preferences1">PREFERENCES1</option>
+            <option value="preferences2">PREFERENCES2</option>
+            <option value="preferences3">PREFERENCES3</option>
+        </select> 
+        </div>
+
+     </div> <!-- end of addons section -->
+
+         <button class="buttonC">READ MORE BUTTON</button>
+        
+    </div>
+
+    <!-- sectionD -->
+
+    <span class="sectionD">
+          <i class="fa-solid fa-user fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="contentD">
+          <h4>WELCOME USER</h4>
+           <p>ADMINISTRATOR ROLE, COMPANY NAME, COUNTRY</p>
+          </div>
+        </span>
+
+    <!-- sectionE -->
+
+    <div class="sectionE">
+          <i class="fa-solid fa-angle-left fa-xl"></i>
+          <!-- <img class="img" src="images/g1.jpg" /> -->
+          <i class="fa-solid fa-angle-right fa-xl"></i>
+    </div>
+
+   <!-- sectionF -->
+
+    <div class="sectionF">
+
+        <div class="heading">
+        <h4>MY CHATS</h4>
+        </div>
+        <hr>
+
+        <div class="chats1">
+          <figure>
+            <img class="imgF" src="images/dog1.png" alt="dog photo" /> 
+          </figure>
+        <div class="chats-content1">
+         <div class="name">STACEY</div>
+         <p>Did you get it right?</p>
+        </div>
+        <button class="buttonF">ADMIN</button>  
+        </div>
+
+        <div class="chats1">
+          <figure>
+        <img class="imgF" src="images/cat1.png" alt="cat photo" /> 
+        </figure>
+        <div class="chats-content2">
+         <div class="name">MATHEW</div>
+          <p>I have sent you the updates</p>
+        </div>
+        <button class="buttonF">ADMIN</button>  
+        </div>
+        
+
+        <div class="chats1">
+        <img class="imgF" src="images/parrot1.png" alt="parrot photo" />
+        <div class="chats-content1">
+        <div class="name">SIMON</div>
+        <p>"Kan et jou ligter leen"</p>
+        </div>
+        <button class="buttonF">JOIN</button>
+        </div>
+
+        <div class="chats1">
+        <img class="imgF" src="images/rabbit1.png" alt="rabbit photo" />
+          <div class="chats-content1">
+        <div class="name">ANTONY</div>
+        <p>I readjusted your volume</p>
+        </div>
+        <button class="buttonF">JOIN</button>
+        </div>
+
+        <div class="chats1">
+        <img class="imgF" src="images/monkey1.png" alt="monkey photo" />
+          <div class="chats-content2">
+        <div class="name">LINDO</div>
+        <p>We are going out on a road trip</p>
+        </div>
+        <button class="buttonF">JOIN</button>
+        </div>
+
+         <div class="chats1">
+         <img class="imgF" src="images/owl1.png" alt="owl photo" /> 
+         <div class="chats-content2">
+        <div class="name">ROXANNE</div>
+         <p>Would you like some rosemary</p>
+         </div>
+         <button class="buttonF">JOIN</button>
+         </div>
+
+    </div>
+
+    <!-- sectionG -->
+
+    <div class="sectionG">
+
+          <div class="sectionG1">
+            <img class="imgG" src="images/trade1A.png" alt="financial noticeboard" /> 
+           <div class="contentG">
+            <h4>SUB HEADING</h4>
+            <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+            <button>READ DETAILS</button>
+           </div>
+         </div>
+
+          <div class="sectionG2">
+            <img class="imgG" src="images/trade2A.png" alt="4 charts" /> 
+           <div class="contentG">
+            <h4>SUB HEADING</h4>
+            <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+           <button>READ DETAILS</button> 
+           
+
+           </div>
+          </div>
+
+          <div class="sectionG3">
+             <img class="imgG" src="images/trade3A.png" alt="coins on desk" /> 
+           <div class="contentG">
+            <h4>SUB HEADING</h4>
+            <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+            <button>READ DETAILS</button>
+           </div>
+          </div>
+
+          <div class="sectionG4">
+             <img class="imgG" src="images/trade4A.png" alt="buy/sell cards" />
+           <div class="contentG">
+             <h4>SUB HEADING</h4>
+             <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+             <button>READ DETAILS</button>
+           </div>
+          </div>
+
+    </div>
+
+    <!-- sectionH -->
+
+    <div class="sectionH">
+
+          <div class="sectionH1">
+            <img class="imgH" src="images/trade5A.png" alt="chart" /> 
+           <div class="contentH">
+            <h4>SUB HEADING</h4>
+            <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+            <button>READ DETAILS</button>
+           </div>
+         </div>
+
+          <div class="sectionH2">
+            <img class="imgH" src="images/trade6A.png" alt="bull statue" /> 
+           <div class="contentH">
+            <h4>SUB HEADING</h4>
+            <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+            <button>READ DETAILS</button>
+           </div>
+          </div>
+
+          <div class="sectionH3">
+             <img class="imgG" src="images/trade7A.png" alt="market stock chart" /> 
+           <div class="contentH">
+            <h4>SUB HEADING</h4>
+            <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+            <button>READ DETAILS</button>
+           </div>
+          </div>
+
+          <div class="sectionH4">
+             <img class="imgH" src="images/trade8A.png" alt="bank stock ticker board" />
+           <div class="contentH">
+             <h4>SUB HEADING</h4>
+             <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+             <button>READ DETAILS</button>
+           </div>
+          </div>
+  
+
+    </div>
+
+    <!-- sectionI -->
+
+
+    <div class="sectionI">
+
+        <div class="todo-list">
+          <h3>MY TO DO LIST</h3>
+          <i class="fa-solid fa-circle-check fa-lg"></i>
+        </div>
+         <hr> <!-- underline -->
+          <div class="todo-update">
+            <i class="fa-solid fa-circle-check fa-2xl"></i>
+            <h4>MY TO DO LIST</h4>
+            <p>YOU ARE CURRENTLY UP TO DATE WITH YOUR TASKS</p>
+          </div>
+
+    </div>
+
+    <!-- sectionJ -->
+
+    <div class="sectionJ">
+
+          <div class="sectionJ1">
+            <img class="imgJ" src="images/trade9A.png" alt="chart" /> 
+           <div class="contentJ">
+            <h4>SUB HEADING</h4>
+            <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+            <button>READ DETAILS</button>
+           </div>
+         </div>
+
+          <div class="sectionJ2">
+            <img class="imgJ" src="images/trade10A.png" alt="calculator and computer on desk" /> 
+           <div class="contentJ">
+            <h4>SUB HEADING</h4>
+            <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+            <button>READ DETAILS</button>
+           </div>
+          </div>
+
+          <div class="sectionJ3">
+             <img class="imgJ" src="images/trade11A.png" alt="chart" /> 
+           <div class="contentJ">
+            <h4>SUB HEADING</h4>
+            <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+            <button>READ DETAILS</button>
+           </div>
+          </div>
+
+          <div class="sectionJ4">
+             <img class="imgJ" src="images/trade12A.png" alt="chart of stocks" />
+           <div class="contentJ">
+             <h4>SUB HEADING</h4>
+             <p>USE THIS TO EXPLAIN OR GIVE A SHORT BRIEF ON THE WEB APPLICATION</p>
+             <button>READ DETAILS</button>
+           </div>
+          </div>
+  
+
+
+          
+
+    </div>
+
+    <!-- sectionK -->
+
+    <div class="sectionK">
+        <h4>TOP RATES APPLICATIONS</h4>
+        <!-- UNDERLINE -->
+         <hr>
+
+        <div class="contentK">
+           <i class="fa-solid fa-circle-dot fa-lg"></i>
+          <p>Both flexible and versatile you are able to integrate this app in 
+            your website with case to assist.
+          </p>
+          </div>
+    </div>
+
+
+    <div class="sectionL"></div>
+    
+
+    </div> <!-- end of container-grid -->
+    
+    
+</body>
+</html>
